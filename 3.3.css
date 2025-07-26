@@ -1,0 +1,449 @@
+*{
+    margin:0px;
+    padding: 0%;
+}
+.cont{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-color:darkslategray;
+    background-size:cover;
+    background-repeat: none;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 30px 80px;
+}
+.navbar h1{
+    color: #434343;
+    font-size: 100px;
+    margin-top: 20px;
+}
+span{
+    color: blueviolet;
+}
+.navbar p{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 60px;
+    color:darkcyan;
+    font-size: 40px;
+}
+ul li{
+    list-style: none;
+    display:inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 20px;
+    cursor: pointer;
+    border:2px solid white;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+ul li a:hover{
+    color: grey;
+    padding: 5px 5px;
+    border: 1px solid grey;
+    transition: .5s;
+}
+body{
+    background-color:darkgrey;
+}
+.menu{
+    width:100%;
+    height: 100px;
+    padding: 10px;
+    display: grid;
+    grid-gap: 50px 60px;
+
+}
+.heading{
+    font-size: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: georgia;
+}
+.food{
+    display:inline-block;
+    position:relative;
+    border-radius: 10px;
+    width: 30%;
+    height: 200px;
+
+}
+.cart-button {
+    padding: 10px 15px;
+    background-color: #4b1733; /* Green for a fresh look */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.cart-button:hover {
+    background-color: #218838;
+}
+.home button{
+    margin-top: 15px;
+    color:black;
+    background-color:mediumaquamarine;
+    font-size: 15px;
+    font-style:initial;
+    padding: 5px 5px;
+    transition: .4s ease-out;
+}
+.home button:hover{
+    color: grey;
+    padding: 5px 5px;
+    border: 1px solid;
+    cursor: pointer;
+}
+button {
+    background-color: #661a38; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    /* transition: background-color 0.3s ease, transform 0.3s ease; */
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #1f4e21;
+    transform: scale(1);
+}
+
+.im{
+    display:grid;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    border-radius: 9px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.details {
+    margin-top: 80%;
+    position: absolute;
+    width: 30%;
+    height:0px;
+    padding-left: 10px;
+}
+.im2{
+    float: center;
+    display:grid;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    border-radius: 9px;
+    cursor: pointer; 
+    padding-left: 110%;
+}
+.d2{
+    margin-top: 80%;
+    position: absolute;
+    width: 30%;
+    height:0px; 
+    padding-left: 110%;
+
+}
+.im3{
+    float: right;
+    display:grid;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    border-radius: 9px;
+    cursor: pointer; 
+    padding-left: 220%;
+}
+.d3{
+    margin-top: 80%;
+    position: absolute;
+    width: 30%;
+    height:0px; 
+    padding-left: 220%;
+      
+}
+.im4{
+    display:grid;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    border-radius: 9px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 110%;
+}
+.d4{
+    margin-top: 80%;
+    position: absolute;
+    width: 30%;
+    height:0px;
+    padding-left: 10px;
+    padding-top: 110%;
+}
+.im5{
+    float: center;
+    display:grid;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    border-radius: 9px;
+    cursor: pointer; 
+    padding-left: 110%;
+    padding-top: 110%;
+}
+.d5{
+    margin-top: 80%;
+    position: absolute;
+    width: 30%;
+    height:0px; 
+    padding-left: 110%;
+    padding-top: 110%;
+}
+.im6{
+    float: right;
+    display:grid;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    border-radius: 9px;
+    cursor: pointer; 
+    padding-left: 220%;
+    padding-top: 110%;
+}
+.d6{
+    margin-top: 80%;
+    position: absolute;
+    width: 30%;
+    height:0px; 
+    padding-left: 220%;
+    padding-top: 110%;
+      
+}
+.im7{
+    display:grid;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    border-radius: 9px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 220%;
+}
+.d7{
+    margin-top: 80%;
+    position: absolute;
+    width: 30%;
+    height:0px;
+    padding-left: 10px;
+    padding-top: 110%;
+    padding-top: 220%;
+}
+.im8{
+    float: center;
+    display:grid;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    border-radius: 9px;
+    cursor: pointer; 
+    padding-left: 110%;
+    padding-top: 220%;
+}
+.d8{
+    margin-top: 80%;
+    position: absolute;
+    width: 30%;
+    height:0px; 
+    padding-left: 110%;
+    padding-top: 220%;
+}
+.im9{
+    float: right;
+    display:grid;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    border-radius: 9px;
+    cursor: pointer; 
+    padding-left: 220%;
+    padding-top: 220%;
+}
+.d9{
+    margin-top: 80%;
+    position: absolute;
+    width: 30%;
+    height:0px; 
+    padding-left: 220%;
+    padding-top: 220%;
+      
+}
+.im11{
+    display:grid;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    border-radius: 9px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 330%;
+}
+.d11{
+    margin-top: 80%;
+    position: absolute;
+    width: 30%;
+    height:0px;
+    padding-left: 10px;
+    padding-top: 110%;
+    padding-top: 330%;
+}
+.im12{
+    float: center;
+    display:grid;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    border-radius: 9px;
+    cursor: pointer; 
+    padding-left: 110%;
+    padding-top: 330%;
+}
+.d12{
+    margin-top: 80%;
+    position: absolute;
+    width: 30%;
+    height:0px; 
+    padding-left: 110%;
+    padding-top: 330%;
+}
+.im13{
+    float: right;
+    display:grid;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    border-radius: 9px;
+    cursor: pointer; 
+    padding-left: 220%;
+    padding-top: 330%;
+}
+.d13{
+    margin-top: 80%;
+    position: absolute;
+    width: 30%;
+    height:0px; 
+    padding-left: 220%;
+    padding-top: 330%;
+    cursor: pointer; 
+   
+}
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cart-items {
+    flex: 3;
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cart-item div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-item button {
+    align-self: flex-start;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.cart-summary {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cart-summary h2 {
+    margin-bottom: 20px;
+}
+
+.cart-summary p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cart-summary button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .food {
+        display: block;
+        text-align: center;
+    }
+
+    .food img {
+        width: 100%;
+        height: auto;
+    }
+
+    .details {
+        margin-top: 10px;
+    }
+}

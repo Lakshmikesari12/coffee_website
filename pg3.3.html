@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="3.3.css">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+    <script>
+        function redirectToCart() {
+            window.location.href = "pg3.4.html";
+        }
+document.addEventListener("DOMContentLoaded", () => {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    function addToCart(event) {
+        let button = event.target;
+        let itemName = button.getAttribute("data-item");
+        let itemPrice = button.getAttribute("data-price");
+
+        cart.push({ item: itemName, price: itemPrice });
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        // Redirect after adding item
+        window.location.href = "pg3.4.html";
+    }
+
+    // Attach event listeners to all "Add to Cart" buttons
+    document.querySelectorAll(".cart-button").forEach(button => {
+        button.addEventListener("click", addToCart);
+    });
+});
+    document.addEventListener("DOMContentLoaded", () => {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        function addToCart(event) {
+            let button = event.target;
+            let itemName = button.getAttribute("data-item");
+            let itemPrice = button.getAttribute("data-price");
+
+            cart.push({ item: itemName, price: itemPrice });
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            // Redirect to cart page
+            window.location.href = "pg3.4.html";
+        }
+
+        // Attach event listeners to all "Add to Cart" buttons
+        document.querySelectorAll(".cart-button").forEach(button => {
+            button.addEventListener("click", addToCart);
+        });
+    });
+
+
+</script>
+</head>
+<body>
+
+<div class="cont">
+    <div class="navbar">
+        <h1>cof<span>fee</span></h1>
+        <p>Coffee Shop</p>
+        <ul>
+            <li><a href="pg3.html">HOME</a></li>
+            <li><a href="pg3.1.html">ABOUT</a></li>
+            <li><a href="pg3.2.html">SERVICES</a></li>
+            <li><a href="pg3.3.html">MENU</a></li>
+            <li><a href="pg3.4.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="menu">
+        <div class="heading">
+            <h1>Varieties</h1>
+            <h2>.....Menu.....</h2>
+        </div>
+
+        <div class="food">
+            <div id="cartItems"></div>
+              
+
+            <!-- Sample Item -->
+            <img src="images/3.1.jpg" class="im">
+                <div class="details">
+                    <h3>Ice-cream coffee</h3>
+                    <h4 class="price">$20</h4>
+                   <button class="cart-button" data-item="Ice-cream coffee" data-price="20">Add to cart</button>
+
+                </div>
+               <img src="images/3.2.jpg" class="im2">
+               <div class="d2">
+                    <h3>Fruity ice-cream</h3>
+                    <h4 class="price">$25</h4>
+                    <button class="cart-button" data-item="Fruity ice-cream" data-price="25">Add to cart</button>
+
+               </div>
+            <img src="images/3.3.jpg" class="im3">
+               <div class="d3">
+                    <h3>Flat white</h3>
+                    <h4 class="price">$15</h4>
+                    <button class="cart-button" data-item="Flat white" data-price="15">Add to cart</button>
+
+               </div>
+               <img src="images/3.4.jpg" class="im4">
+               <div class="d4">
+                    <h3>Cappuccino</h3>
+                    <h4 class="price">$30</h4>
+                    <button class="cart-button" data-item="Cappuccino" data-price="30">Add to cart</button>
+
+               </div>
+               <img src="images/3.5.jpg" class="im5">
+               <div class="d5">
+                    <h3>Black coffee</h3>
+                    <h4 class="price">$20</h4>
+                    <button class="cart-button" data-item="Black coffee" data-price="20">Add to cart</button>
+
+               </div>
+               <img src="images/3.6.jpg" class="im6">
+               <div class="d6">
+                    <h3>Long black(Browncoffee)</h3>
+                    <h4 class="price">$10</h4>
+                    <button class="cart-button" data-item="Long black(Browncoffee)" data-price="10">Add to cart</button>
+
+               </div>
+               <img src="images/3.7.jpg" class="im7">
+               <div class="d7">
+                    <h3>1+1(Black+cappuccino)</h3>
+                    <h4 class="price">$20</h4>
+                    <button class="cart-button" data-item="1+1(Black+cappuccino)" data-price="20">Add to cart</button>
+
+               </div>
+               <img src="images/3.8.jpg" class="im8">
+               <div class="d8">
+                    <h3>Tea</h3>
+                    <h4 class="price">$25</h4>
+                    <button class="cart-button" data-item="Tea" data-price="25">Add to cart</button>
+
+               </div>
+               <img src="images/3.9.jpg" class="im9">
+               <div class="d9">
+                    <h3>pastries</h3>
+                    <h4 class="price">$30</h4>
+                    <button class="cart-button" data-item="pastries" data-price="30">Add to cart</button>
+
+               </div>
+               <img src="images/3.11.jpg" class="im11">
+               <div class="d11">
+                    <h3>Kitkat chocolatepastry</h3>
+                    <h4 class="price">$30</h4>
+                    <button class="cart-button" data-item="Kitkat chocolatepastry" data-price="30">Add to cart</button>
+
+               </div>
+
+               <img src="images/3.12.jpg" class="im12">
+               <div class="d12">
+                    <h3>Strawberry pastry</h3>
+                    <h4 class="price">$20</h4>
+                    <button class="cart-button" data-item="Strawberry pastry" data-price="20">Add to cart</button>
+
+               </div>
+               <img src="images/3.13.jpg" class="im13">
+               <div class="d13">
+                    <h3>Chocolate  puffpastry</h3>
+                    <h4 class="price">$15</h4>
+          <button class="cart-button" data-item="Chocolate  puffpastry" data-price="15">Add to cart</button>
+
+               </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
